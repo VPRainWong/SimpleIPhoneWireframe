@@ -1,0 +1,29 @@
+<plugin
+		id="com.vp.plugin.sample.iphonewireframeplugin"
+		name="iPhone Wireframe Plugin"
+		description="Sample plugin for iPhone Wireframe Plugin"
+		provider="Visual Paradigm"
+		class="com.vp.plugin.sample.iphonewireframe.IPhoneWireframePlugin">
+	
+	<actionSets>
+  		<actionSet id="com.vp.plugin.sample.iphonewireframe.actionset1">
+			<toolbar
+					id="com.vp.plugin.sample.iphonewireframe.actionset1.toolbar1"
+					orientation="north"
+					index="last"/>
+			
+			<action
+					id="com.vp.plugin.sample.iphonewireframe.actionset1.IPhoneWireframeAction"
+					actionType="generalAction"
+      		name="iPhone Wireframe Plugin"
+		      description="Sample plugin for iPhone Wireframe Plugin"
+					style="normal"
+          icon="icon/icon.png"
+          tooltip="iPhone Wireframe"
+					toolbarPath="com.vp.plugin.sample.iphonewireframe.actionset1.toolbar1/#">
+				<actionController class="com.vp.plugin.sample.iphonewireframe.action.IPhoneWireframeActionControl"/>
+			</action>
+		</actionSet>
+
+	</actionSets>	
+</plugin>
